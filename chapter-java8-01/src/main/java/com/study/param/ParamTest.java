@@ -39,6 +39,7 @@ public class ParamTest {
     public static void main(String[] args) {
         /**
          * JAVA中的值传递和引用传递
+         * Java中其实还是值传递的，只不过对于对象参数，值的内容是对象的引用
          * **/
         ParamTest test = new ParamTest();
         test.setName("hello");
