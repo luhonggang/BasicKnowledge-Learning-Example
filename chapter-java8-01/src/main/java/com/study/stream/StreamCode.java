@@ -47,6 +47,20 @@ public class StreamCode {
         regexList.filter( s -> s.startsWith("hello")).collect(Collectors.toList())
         .forEach(System.out::println);
 
+        /* 6.打印流式处理中的结果*/
+        List<MentionSource> sourceList = Arrays.asList(
+                new MentionSource("1","t1",1,1,"1","1"),
+                new MentionSource("2","t2",2,2,"2","2"),
+                new MentionSource("3","t3",3,1,"3","3"));
+        List<String> strName = sourceList.stream().filter(m -> {
+            System.out.println(" filtering : " + m.getId());
+            return m.getDataType() < 3;
+        }).map(m ->{
+            System.out.println(" [map] ---> : " + m.getName());
+            return m.getName();
+        }).limit(3).collect(Collectors.toList());
+        System.out.println(" 合并的结果 : " + strName);
+
 
     }
 
