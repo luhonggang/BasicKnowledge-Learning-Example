@@ -5,6 +5,8 @@ package com.example.mode;
  * @author LuHongGang
  * @date 2018-05-24 14:03
  * @since 1.0
+ * 关联关系 : 实线 + 箭头 表示 箭头指向被使用的类
+ * 表示让一个类知道另一个类的属性和方法
  **/
 public class AdapterImpl implements Target{
 

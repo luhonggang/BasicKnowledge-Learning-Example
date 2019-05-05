@@ -8,5 +8,6 @@ package com.example.mode;
  **/
 public interface Target {
      void someInfoMsg();
+     @SuppressWarnings("AlibabaAbstractMethodOrInterfaceMethodMustUseJavadoc")
      void otherInfoMsg();
 }
