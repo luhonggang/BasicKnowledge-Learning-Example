@@ -1,5 +1,6 @@
 package com.didispace.web;
 
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -12,9 +13,16 @@ import org.springframework.web.bind.annotation.*;
 public class HelloController {
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
-    @ResponseBody
+    @Async
     public String hello(@RequestParam String name) {
+        System.out.println(" ++++++++++ call hello() ++++++++++ 方法");
         return "Hello " + name;
     }
 
+    @RequestMapping(value = "/hello2", method = RequestMethod.GET)
+    @Async
+    public String hello2(@RequestParam String name) {
+        System.out.println(" ++++++++++ call hello2() ++++++++++ 方法");
+        return "Hello2 " + name;
+    }
 }

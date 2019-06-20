@@ -31,6 +31,10 @@ public class WebLogAspect {
 
     ThreadLocal<Long> startTime = new ThreadLocal<>();
 
+    /**
+     * 我的理解是 一个切入点
+     * 指定的是对那些包下面的类 在程序运行的时候 进行功能增强
+     */
     @Pointcut("execution(public * com.didispace.web..*.*(..))")
     public void webLog(){}
 
