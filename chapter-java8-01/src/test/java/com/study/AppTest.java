@@ -16,5 +16,8 @@ public class AppTest
     public void shouldAnswerWithTrue()
     {
         assertTrue( true );
+
+        int a = 2^0;
+        System.out.println("输出的变量值 : " + a);
     }
 }

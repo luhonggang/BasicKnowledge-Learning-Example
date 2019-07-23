@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * 引用变量类型
  *
- * @author guoqiang
+ * @author
  * @date 2019-01-14 5:44 PM
  */
 public enum RefVariableTypeEnum  {

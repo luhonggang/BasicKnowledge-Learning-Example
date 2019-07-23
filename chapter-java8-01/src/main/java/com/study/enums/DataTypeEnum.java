@@ -4,6 +4,10 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author luhonggang
+ */
+
 public enum DataTypeEnum{
 
     TEXT(1, "文本"),
