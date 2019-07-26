@@ -1,8 +1,6 @@
 package com.study.param;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 
 /**
  * 参考网址说明 编写的测试类测试
@@ -45,6 +43,14 @@ public class ParamTest<K,V> {
         Map<String,String> testMap = new HashMap<>(20);
         Object rs = testMap.put("test","test");
         System.out.println(" put的结果 : " + rs);
+
+        /**
+         * Arrays.asList() 方法的个性
+            Exception in thread "main" java.lang.UnsupportedOperationException
+         */
+        List<String> arrays = Arrays.asList("1");
+        arrays.add("2");
+        // Exception in thread "main" java.lang.UnsupportedOperationException
 //        System.out.println(" 返回的结果 : " + testMap.get("test"));
 
 //        ParamTest map = new ParamTest();
