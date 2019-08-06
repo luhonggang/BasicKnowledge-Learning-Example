@@ -50,6 +50,8 @@ public class ParamTest<K,V> {
          */
         List<String> arrays = Arrays.asList("1");
         arrays.add("2");
+        String[] str = new String[3];
+        arrays.toArray(str);
         // Exception in thread "main" java.lang.UnsupportedOperationException
 //        System.out.println(" 返回的结果 : " + testMap.get("test"));
 
