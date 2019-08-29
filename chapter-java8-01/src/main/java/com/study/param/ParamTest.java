@@ -1,5 +1,10 @@
 package com.study.param;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.ToString;
+
 import java.util.*;
 
 /**
@@ -9,12 +14,15 @@ import java.util.*;
  * @version 1.8.0
  * @date 2019/4/11 16:48
  */
+@Data
+@Builder
+@ToString
 public class ParamTest<K,V> {
 
     private String name;
     private String gender;
 
-    private ParamTest() {
+    public ParamTest() {
     }
 
     public ParamTest(String name, String gender) {
