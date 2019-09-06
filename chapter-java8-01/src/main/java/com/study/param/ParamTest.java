@@ -46,8 +46,18 @@ public class ParamTest<K,V> {
                 '}';
     }
 
+    /**
+     *  形式参数 测试
+     * @param arg
+     */
+    public static void paramTest(Object ...arg){
+        for (int i = 0; i < arg.length; i++) {
+            System.out.println("形式参数输入的集合 : " + arg[i]);
+        }
+    }
     public static void main(String[] args) {
 
+        paramTest(1,2,4,4);
         Map<String,String> testMap = new HashMap<>(20);
         Object rs = testMap.put("test","test");
         System.out.println(" put的结果 : " + rs);
