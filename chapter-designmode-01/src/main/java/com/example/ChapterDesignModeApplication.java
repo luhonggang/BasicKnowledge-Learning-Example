@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author luhonggang
  */
 @SpringBootApplication
-public class ChapterDesignmode01Application {
+public class ChapterDesignModeApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(ChapterDesignmode01Application.class, args);
+		SpringApplication.run(ChapterDesignModeApplication.class, args);
 	}
 }

@@ -1,5 +1,8 @@
 package com.study.synchronizeds;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 静态同步方法，锁是当前类的class对象
  * @author luhonggang
@@ -12,6 +15,8 @@ public class SynchronizedStaticTest {
         try {
             System.out.println("Method 1 execute");
             Thread.sleep(3000);
+            Map<String,String> hashMap = new HashMap<>(16);
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
